@@ -63,8 +63,8 @@ export const page = {
 
 // contact: { name, role?, email[], photo?, pending? }  (name null => pendente de confirmação)
 const phoneLabel = 'Telefone:'; // literal da página oficial; os valores são e-mails
-export const labContact = { name: 'Marcelo Sanches Miguel Dias', emails: ['mdias@ipt.br', 'lge@ipt.br'], label: phoneLabel,
-  photo: U + '' };
+export const labContact = { name: 'Marcelo Sanchez Miguel Dias', emails: ['mdias@ipt.br', 'lge@ipt.br'], label: phoneLabel,
+  photo: U + '2023/09/marcelo--1024x683.jpg' };
 
 export const areasIntro = {
   title: 'Áreas de atuação',
@@ -72,84 +72,50 @@ export const areasIntro = {
   items: ['Compatibilidade eletromagnética;', 'Segurança elétrica de equipamentos elétricos, ópticos e eletromédicos;', 'Calibração e ensaios de equipamentos elétricos/óticos;', 'Energias – hidrogênio, solar, eólico;'],
 };
 
-// Cards de orientação da seção: não substituem o detalhamento técnico nos acordeões abaixo.
-export const areaHighlights = [
-  { title: 'Compatibilidade eletromagnética', description: 'Ensaios de emissão e imunidade eletromagnética para produtos e equipamentos.', target: 'emc', image: null, imageLabel: 'Imagem institucional da área de compatibilidade eletromagnética — pendente' },
-  { title: 'Segurança elétrica', description: 'Ensaios de segurança para equipamentos elétricos, ópticos e eletromédicos, além de materiais.', target: 'seguranca', image: null, imageLabel: 'Imagem institucional da área de segurança elétrica — pendente' },
-  { title: 'Calibração e ensaios elétricos/óticos', description: 'Ensaios e calibrações de equipamentos elétricos e ópticos.', target: 'optica', image: null, imageLabel: 'Imagem institucional de calibração ou ensaio óptico — pendente' },
-  { title: 'Energias', description: 'Atuação em temas de hidrogênio, energia solar e energia eólica.', target: null, image: null, imageLabel: 'Imagem institucional de tecnologias de energia — pendente' },
-];
-
-// Aplicações citadas no conteúdo institucional. Não incluem cliente, prazo, resultado ou escopo além do documentado.
-export const projects = [
-  { title: 'Transportes e segurança viária (VLT)', description: 'Atuação em serviços especializados ligados a transportes e segurança viária.', contribution: 'Competência técnica para apoiar demandas do segmento.', tags: ['Transportes', 'Segurança viária'], image: null, imageLabel: 'Fotografia institucional de aplicação em VLT — a fornecer' },
-  { title: 'Refletores utilizados na Copa do Mundo', description: 'Experiência relatada em ensaios relacionados a refletores utilizados na Copa do Mundo.', contribution: 'Medição de coeficientes de retrorreflexão entre os ensaios documentados.', tags: ['Ensaios ópticos', 'Materiais'], image: null, imageLabel: 'Fotografia institucional de refletores ou ensaio óptico — a fornecer' },
-  { title: 'Cabos umbilicais', description: 'Atuação em ensaios de cabos umbilicais para plataformas de petróleo.', contribution: 'Apoio técnico em um segmento crítico de infraestrutura energética.', tags: ['Ensaios elétricos', 'Energia'], image: null, imageLabel: 'Fotografia institucional de cabos umbilicais — a fornecer' },
-  { title: 'Sistemas elétricos e eficiência energética', description: 'Projetos de pesquisa tecnológica, ensaios normativos e iniciativas voltadas aos usos finais de energia.', contribution: 'Infraestrutura laboratorial e competências em avaliação elétrica.', tags: ['Sistemas elétricos', 'Eficiência energética'], image: null, imageLabel: 'Fotografia institucional de sistema elétrico — a fornecer' },
-  { title: 'Geração fotovoltaica', description: 'Apoio ao desenvolvimento de produtos junto à cadeia produtiva de geração fotovoltaica.', contribution: 'Pesquisa e desenvolvimento em tecnologias para a transição energética.', tags: ['Fotovoltaica', 'P&D'], image: null, imageLabel: 'Fotografia institucional de aplicação fotovoltaica — a fornecer' },
-];
-
-// Indicadores informados para esta cópia; período, método e fonte exigem validação institucional.
-export const qualityIndicators = [
-  { value: '99%', label: 'avaliação positiva dos clientes' },
-  { value: 'Zero', label: 'retrabalhos' },
-];
-
-export const materialTests = [
-  { title: 'Rigidez dielétrica', summary: 'Verifica a tensão de ruptura em função da espessura nominal do material.', evaluates: 'Comportamento do material sob tensão elétrica.', standard: 'ASTM D149' },
-  { title: 'Constante dielétrica e tangente de perdas', summary: 'Caracterização elétrica de materiais dielétricos.', evaluates: 'Constante dielétrica e perdas no material.', standard: 'ASTM D150, IEC 62631-2' },
-  { title: 'Resistividade superficial e volumétrica', summary: 'Medição relacionada à resistência à passagem de corrente elétrica contínua entre pontos específicos.', evaluates: 'Resistividade elétrica superficial e volumétrica.', standard: 'ASTM D 257' },
-  { title: 'Resistência elétrica de pisos', summary: 'Ensaio de resistência elétrica aplicável a pisos.', evaluates: 'Resistência elétrica do material.', standard: 'ASTM F150, IEC 61340-4-1 ou equivalentes' },
-  { title: 'Tracking elétrico', summary: 'Ensaio de tracking elétrico em materiais.', evaluates: 'Comportamento do material no ensaio de tracking.', standard: 'IEC 60112' },
-];
-
 // blocks: p (html) | list (heading, items)
 export const areas = [
   { id: 'emc', title: 'Compatibilidade Eletromagnética (EMC)',
     blocks: [
       { type: 'p', html: 'Acreditado pelo <strong>Inmetro (CGCRE-045)</strong>, o laboratório realiza ensaios <strong>EMC</strong> conforme normas nacionais e internacionais, garantindo que os equipamentos atendam aos requisitos de emissão e imunidade eletromagnética. Atuamos desde protótipos até produtos para exportação, com acreditação Inmetro e reconhecimento <strong>Ilac</strong>.' },
       { type: 'list', heading: 'Infraestrutura', items: ['Camara semi-aencoica “full-compliance”', 'Sistemas de campo próximo para análise de fontes de ruído', 'Simulação numérica computacional para otimização eletromagnética'] },
-      { type: 'list', heading: 'Principais normas atendidas', items: ['IEC 61547 — iluminação.', 'IEC 60601-1-2 — eletromédicos.', 'IEC 60335-1 — eletrodomésticos.', 'CISPR 22 — Tecnologia da Informação.'] },
-      { type: 'list', heading: 'Ensaios de emissão', items: ['Emissão radiada e conduzida — CISPR 11 / CISPR 15.', 'Harmônicos — IEC 61000-3-2.', 'Flicker — IEC 61000-3-3.'] },
-      { type: 'list', heading: 'Ensaios de imunidade', items: ['IEC 61000-4-2 a IEC 61000-4-13: ESD; imunidade radiada na câmara semi-anecoica ou SAC (semi anechoic chamber); EFT ou Burst; Surto ou Surge; imunidade conduzida; campo magnético; quedas de tensão; e inter-harmônicos.'] },
+      { type: 'list', heading: 'Principais normas atendidas', items: [
+        'Normas de produtos: IEC 61547 (iluminação); -IEC 60601-1-2 (eletromédicos); -IEC 60335-1 (eletrodomésticos); -CISPR22 (Tecnologia da Informação)',
+        'Ensaio de emissão:-Emissão radiada e conduzida (CISPR11 / CISPR 15); -Harmonicos (IEC 61000-3-2) e Flicker (IEC 61000-3-3',
+        'Ensaio de Imunidade: IEC 61000-4-2 a IEC 61000-4-13 (ESD, imunidade radiada na câmara semi-anecoica ou SAC – semi anechoic chamber, EFT ou Burst, Surto ou Surge, imunidade conduzida, campo magnético, quedas de tensão e inter-harmônicos)'] },
       { type: 'p', html: 'Esses ensaios verificam se os equipamentos não geram interferências excessivas e suportam perturbações do ambiente eletromagnético, mantendo segurança e desempenho essencial.' },
     ],
-    galleryPosition: 'afterIntro',
     gallery: [
-      { src: U + '2026/06/LGECamara-Anecoica-1-edited.png', alt: 'Câmara anecoica do LGE', label: 'Câmara anecoica do LGE' },
-      { src: U + '2026/06/LGE_foto-capa-2-edited-scaled.jpg', alt: 'Infraestrutura do LGE', label: 'Infraestrutura do LGE' },
+      { src: U + '2026/06/LGECamara-Anecoica-1-edited.png', alt: 'Câmara anecoica do LGE', label: 'Câmara anecoica' },
+      { src: U + '2026/06/LGE_foto-capa-2-edited-scaled.jpg', alt: 'Foto do LGE', label: 'Foto do LGE' },
+      
     ],
-    contacts: [{ title: 'Contato', name: 'Marcelo Sanches Miguel Dias', emails: ['mdias@ipt.br'], photo: null }] },
+    contacts: [{ title: 'Contato', name: 'Marcelo Sanchez Miguel Dias', emails: ['mdias@ipt.br'], photo: null }] },
 
   { id: 'seguranca', title: 'Segurança elétrica de equipamentos e materiais elétricos',
     blocks: [
       { type: 'p', html: 'Acreditado pelo <strong>Inmetro (CGCRE-045)</strong>, o setor de segurança elétrica de equipamentos auxilia no desenvolvimento e na adequação de diversos equipamentos eletroeletrônicos, com a finalidade de ingresso destes produtos no mercado. Em materiais o laboratório LGE possui uma gama de ensaios dedicados a análise da condutividade e resistividade de materiais. Como a rigidez dielétrica que verifica a tensão de ruptura em função da espessura nominal do material. Ou a resistividade superficial e volumétrica que determinada através da resistência à passagem de corrente elétrica contínua entre dois pontos específicos.' },
       { type: 'list', heading: 'Infraestrutura', items: ['Sala para ensaios de alta tensão;', 'Sala para ensaios de segurança de equipamentos elétricos e eletromédicos.'] },
-      { type: 'list', heading: 'Segurança elétrica de equipamentos', items: [
+      { type: 'list', heading: 'Principais ensaios e normas atendidas', items: [
         'Equipamentos Eletromédicos (NBR IEC 60601-1 e específicas) como respiradores, equipamentos odontológicos.',
-        'Eletrodomésticos (NBR IEC 60335-1 e específicas);'] },
-      { type: 'list', heading: 'Materiais elétricos', items: ['Ensaio de rigidez dielétrica (ASTM D149);',
+        'Eletrodomésticos (NBR IEC 60335-1 e específicas);', 'Ensaio de rigidez dielétrica (ASTM D149);',
         'Ensaio de resistência elétrica de pisos (ASTM F150, IEC 61340-4-1 ou equivalentes);',
         'Ensaio de constante dielétrica e tangente de perdas (ASTM D150, IEC 62631-2);',
         'Resistividades elétrica superficial e volumétrica, ASTM D 257.', 'Ensaio de tracking elétrico (IEC 60112)'] },
     ],
-    // Não há fotografias de infraestrutura/materiais confirmadas nesta cópia. Substituir pelos registros institucionais autorizados.
-    galleryPosition: 'afterIntro',
     gallery: [
-      { src: null, alt: 'Infraestrutura para ensaios de materiais elétricos do LGE', label: 'Fotografia institucional da área de materiais e infraestrutura de ensaio — a fornecer' },
-      { src: null, alt: 'Ensaio de material elétrico no LGE', label: 'Fotografia institucional de amostra, equipamento ou ensaio de materiais — a fornecer' },
+      { src: 'assets/images/aplicador.jpg', alt: 'Aplicador utilizado em ensaios de materiais elétricos', label: 'Aplicador de ensaio' },
+      { src: 'assets/images/resistenciamateriais.jpg', alt: 'Equipamento para ensaios de resistência de materiais elétricos', label: 'Resistência de materiais' },
     ],
     contacts: [
-      { title: 'Segurança elétrica de equipamentos', name: 'Marcelo Sanches Miguel Dias', emails: ['mdias@ipt.br'], photo: null },
-      // PENDENTE: a página oficial lista Marcelo Sanches Miguel Dias, mas a foto associada tem outro nome de arquivo.
-      { title: 'Segurança elétrica de materiais', name: null, emails: [], photo: null, pending: true },
+      { title: 'Segurança elétrica de equipamentos', name: 'Eduardo Berruzero', emails: ['eduardob@ipt.br'], photo: 'assets/images/edu.png' },
+      { title: 'Segurança elétrica de materiais', name: 'Kleber Jesus de Oliveira', emails: ['kleberjo@ipt.br'], photo: 'assets/images/kleber.png' },
     ] },
 
-  { id: 'optica', title: 'Ensaios em equipamentos ópticos / Fotometria',
+  { id: 'optica', title: 'Ensaios em equipamentos ópticos',
     blocks: [
       { type: 'p', html: 'Acreditado Inmetro (CGCRE-045), a área de óptica atua na medição de equipamentos que trabalham com medições no espectro visível, ultravioleta e infravermelho. A medição de irradiância nesses três espectros, inclui aplicações em equipamentos para a saúde, desempenho para conforto ambiental, exposição ocupacional e equipamentos de proteção individual. No espectro visível caracterizamos avaliação de desempenho de luminárias e de lâmpadas, inclusive LEDs, incluindo sua utilização em iluminação pública e materiais e equipamentos de sinalização e visualização, como refletivos e retrorrefletivos.' },
       { type: 'p', html: '<strong>Calibração de equipamentos ópticos</strong><br>Acreditado Inmetro (RBC- 377), a área realiza calibração de refratômetros, espectrofotômetros, luminancimetros e luxímetros.' },
-      { type: 'list', heading: 'Infraestrutura', items: ['Túnel fotométrico, para ensaios de sinalização;', 'Goniofotômetro;', 'Esfera Integradora;', 'Espectrometria e refratometria;'] },
+      { type: 'list', heading: 'Infraestrutura', items: ['Túnel fotométrico, para ensaios de sinalização;', 'Goniofotômetro;', 'Esfera ;', 'Espectrometria e refratometria;'] },
       { type: 'list', heading: 'Principais ensaios realizados e normas atendidas', items: [
         'Determinação da transmissão luminosa de materiais, transmitância, refração, proteção solar;',
         'Determinação dos coeficientes de retrorreflexão (ASTM 808-23, 809-21, 810-20 e NBR 15292:13);',
@@ -159,16 +125,13 @@ export const areas = [
         'Avaliação de ciclo de vida de produtos para iluminação.'] },
       { type: 'list', heading: 'Principais calibrações realizadas', items: ['Espectrofotômetros;', 'Luxímetros;', 'Filtros ópticos'] },
     ],
-    // Galeria posicionada junto à introdução. Substituir por fotografias institucionais da área de fotometria.
-    galleryPosition: 'afterIntro',
     gallery: [
-      { src: null, alt: 'Infraestrutura de fotometria do LGE', label: 'Fotografia institucional da infraestrutura de fotometria — a fornecer' },
-      { src: null, alt: 'Equipamento óptico em ensaio no LGE', label: 'Fotografia institucional de equipamento ou ensaio óptico — a fornecer' },
-      { src: null, alt: 'Instrumentação de medição óptica do LGE', label: 'Fotografia institucional de instrumentação óptica — a fornecer' },
+      { src: 'assets/images/gonio.jpg', alt: 'Goniofotômetro utilizado em ensaios ópticos', label: 'Goniofotômetro' },
+      { src: 'assets/images/esfera.jpg', alt: 'Esfera integradora utilizada em medições ópticas', label: 'Esfera integradora' },
     ],
     contacts: [
-      { title: 'Ensaios', name: 'Oswaldo Sanchez Junior', emails: ['osanchez@ipt.br'], photo: U + '2023/09/LGE_Oswaldo-Sanches-scaled-e1781269252465-914x1024.jpg' },
-      { title: 'Calibração', name: 'Raul Leone Filho', emails: ['rleone@ipt.br'], photo: null },
+      { title: 'Ensaios', name: 'Oswaldo Sanchez Junior', emails: ['osanchez@ipt.br'], photo: 'assets/images/oswaldo.png' },
+      { title: 'Calibração', name: 'Raul Leone Filho', emails: ['rleone@ipt.br'], photo: U + '2023/09/Image-2.png' },
     ] },
 ];
 
@@ -184,3 +147,50 @@ export const footer = {
   legal: [['SIC SP', 'https://ipt.br/sic-transparencia/'], ['Política de Privacidade', 'https://ipt.br/politica-de-privacidade/'], ['Termos de Uso', 'https://ipt.br/termos-de-uso/']],
   copyright: '© 2026 Instituto de Pesquisas Tecnológicas. Todos os direitos reservados.',
 };
+
+
+// Conteúdo editorial para a reorganização da página (descrições curtas, a validar institucionalmente).
+
+export const projects = [
+  {
+    title: 'Transportes, infraestrutura viária e mobilidade',
+    text: 'Atuação técnica em projetos de infraestrutura e mobilidade, incluindo medições, avaliações, elaboração de laudos técnicos e análises aplicadas a sistemas de transporte. Experiências envolvendo o VLT do Rio de Janeiro e trabalhos relacionados à ARTESP.'
+  },
+  {
+    title: 'Refletores e iluminação',
+    text: 'Ensaios e avaliações técnicas de refletores e sistemas de iluminação, incluindo análises de desempenho e aplicações em projetos de infraestrutura e iluminação.'
+  },
+  {
+    title: 'Cabos umbilicais – Petrobras',
+    text: 'Desenvolvimento de soluções de blindagem para cabos de sensores empregados em cabos umbilicais de plataformas de petróleo, contribuindo para o desempenho e a confiabilidade dos sistemas.'
+  },
+  {
+    title: 'Sistemas elétricos e eficiência energética',
+    text: 'Estudos, avaliações e atividades técnicas relacionadas ao desempenho de sistemas elétricos e à eficiência energética, visando contribuir para o desenvolvimento e aprimoramento de soluções.'
+  },
+  {
+    title: 'Geração fotovoltaica',
+    text: 'Apoio técnico ao desenvolvimento, avaliação e caracterização de produtos e tecnologias relacionadas à geração fotovoltaica.'
+  },
+  {
+    title: 'Centro de Cidades Inteligentes – FAPESP',
+    text: 'Participação em iniciativa de pesquisa voltada ao desenvolvimento de soluções tecnológicas para desafios urbanos, integrando conhecimento técnico e inovação.'
+  },
+  {
+    title: 'Iluminação pública – Unicamp / CePIL',
+    text: 'Participação em projetos relacionados à pesquisa, avaliação e modernização de sistemas de iluminação pública, contribuindo para o desenvolvimento de soluções tecnológicas aplicadas.'
+  },
+  {
+    title: 'CCD Cidade Carbono Neutro',
+    text: 'Participação em iniciativa de ciência para o desenvolvimento voltada à descarbonização e sustentabilidade urbana, envolvendo desafios tecnológicos e aplicações para cidades.'
+  }
+];
+
+
+export const strategicThemes = [
+  { title: 'Valoração tecnológica, impacto socioambiental e justiça energética', text: 'Compreender o valor e os efeitos das tecnologias para além de seu desempenho técnico, considerando avaliação de ciclo de vida, impactos ambientais, sustentabilidade e consequências sociais do uso da energia. Essa perspectiva também contempla a justiça energética: acesso, distribuição de benefícios e custos e condições para que a transição energética seja inclusiva.' },
+  { title: 'Segurança eletrotécnica, confiabilidade e compatibilidade eletromagnética', text: 'Contribuir para que equipamentos, materiais e sistemas elétricos operem com segurança, confiabilidade e desempenho adequado. Reúne temas como segurança eletrotécnica, avaliação de materiais, ensaios de alta tensão, compatibilidade eletromagnética e análise de requisitos e comportamento dos sistemas em suas aplicações.' },
+  { title: 'Transição energética, vetores renováveis e mobilidade sustentável', text: 'Acompanhar e apoiar o desenvolvimento e a aplicação de tecnologias que viabilizam a transformação dos sistemas energéticos. Inclui geração renovável, hidrogênio e outros vetores energéticos, eficiência, eletrificação e soluções associadas à mobilidade sustentável, aproximando pesquisa, avaliação tecnológica e necessidades de aplicação.' },
+  { title: 'Digitalização, resiliência e recursos energéticos distribuídos', text: 'Explorar a integração entre tecnologias digitais e sistemas de energia para ampliar eficiência, flexibilidade e capacidade de resposta. Abrange recursos energéticos distribuídos, armazenamento, sistemas de conversão, monitoramento e soluções de gestão, com atenção à resiliência e à integração de diferentes componentes da infraestrutura energética.' },
+  { title: 'Articulação de políticas públicas e integração de ecossistemas', text: 'Promover a conexão entre conhecimento técnico, instituições de pesquisa, setor produtivo e poder público. A articulação de competências e atores contribui para estruturar projetos, apoiar decisões e aproximar o desenvolvimento tecnológico de políticas, demandas territoriais e desafios de interesse coletivo.' },
+];
