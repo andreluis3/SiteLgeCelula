@@ -10,3 +10,7 @@
 8. **Acordeões**: estado inicial (fechado) e comportamento (independentes) são suposições.
 9. **Menu**: dropdowns por clique (a oficial pode usar hover); seletor de idioma e newsletter não funcionais.
 10. **Compartilhar**: LinkedIn e Facebook apontam para a página oficial (como na oficial); o terceiro link "#" não foi reproduzido.
+11. **Indicadores de qualidade**: “99% de avaliação positiva dos clientes” e “Zero retrabalhos” foram incluídos conforme solicitação, mas período, método de apuração e fonte precisam de validação institucional antes da publicação oficial.
+12. **Imagens de aplicações**: os cards de VLT, refletores, cabos umbilicais, sistemas elétricos/eficiência energética e fotovoltaica usam placeholders identificados até o fornecimento de fotografias institucionais autorizadas. Ver `assets/images/README.md`.
+13. **SEO de produção**: canonical, Open Graph e sitemap usam a URL oficial já documentada. Confirmar a URL final de publicação e ajustar, se necessário, antes do deploy.
+14. **Cards de áreas principais**: quatro campos de imagem estão preparados para EMC, segurança elétrica, calibração/ensaios ópticos e energias. Fornecer fotografias institucionais autorizadas para substituir as indicações discretas de imagem pendente.
