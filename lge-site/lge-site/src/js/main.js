@@ -13,6 +13,11 @@ main.innerHTML = `<div class="container">
   <div class="cover" id="cover"></div>
   <h2>${esc(page.subtitle)}</h2>
   <div class="prose">${page.intro.map((p) => `<p>${p}</p>`).join('')}</div>
+  <h2>Contato</h2><div id="lab-contact"></div>
+  <h2 id="areas">${esc(areasIntro.title)}</h2>
+  <p>${esc(areasIntro.text)}</p>
+  <ul class="area-list">${areasIntro.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+  <div id="accordions"></div>
   <section class="quality-highlight" aria-labelledby="quality-title">
     <div class="quality-copy"><p class="eyebrow">Qualidade</p><h2 id="quality-title">Indicadores em destaque</h2><p>Indicadores apresentados conforme informação fornecida. Período, método e fonte permanecem pendentes de validação institucional.</p></div>
     <div class="quality-metrics"><div class="quality-metric"><strong>99%</strong><span>avaliação positiva dos clientes</span></div><div class="quality-metric"><strong>Zero</strong><span>retrabalhos</span></div></div>
@@ -26,11 +31,6 @@ main.innerHTML = `<div class="container">
     <h2>Frentes estratégicas e aplicações</h2>
     <div class="theme-grid">${strategicThemes.map((t, i) => `<article class="theme-card"><span class="theme-number">${String(i + 1).padStart(2, '0')}</span><h3>${esc(t.title)}</h3><p>${t.text}</p></article>`).join('')}</div>
   </section>
-  <h2>Contato</h2><div id="lab-contact"></div>
-  <h2 id="areas">${esc(areasIntro.title)}</h2>
-  <p>${esc(areasIntro.text)}</p>
-  <ul class="area-list">${areasIntro.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
-  <div id="accordions"></div>
   <div class="share"><span>Compartilhe</span>
     <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(site.officialUrl)}">LinkedIn</a>
     <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(site.officialUrl)}">Facebook</a></div>

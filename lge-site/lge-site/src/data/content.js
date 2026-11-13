@@ -115,7 +115,7 @@ export const areas = [
     blocks: [
       { type: 'p', html: 'Acreditado Inmetro (CGCRE-045), a área de óptica atua na medição de equipamentos que trabalham com medições no espectro visível, ultravioleta e infravermelho. A medição de irradiância nesses três espectros, inclui aplicações em equipamentos para a saúde, desempenho para conforto ambiental, exposição ocupacional e equipamentos de proteção individual. No espectro visível caracterizamos avaliação de desempenho de luminárias e de lâmpadas, inclusive LEDs, incluindo sua utilização em iluminação pública e materiais e equipamentos de sinalização e visualização, como refletivos e retrorrefletivos.' },
       { type: 'p', html: '<strong>Calibração de equipamentos ópticos</strong><br>Acreditado Inmetro (RBC- 377), a área realiza calibração de refratômetros, espectrofotômetros, luminancimetros e luxímetros.' },
-      { type: 'list', heading: 'Infraestrutura', items: ['Túnel fotométrico, para ensaios de sinalização;', 'Goniofotômetro;', 'Esfera ;', 'Espectrometria e refratometria;'] },
+      { type: 'list', heading: 'Infraestrutura', items: ['Túnel fotométrico, para ensaios de sinalização;', 'Goniofotômetro;', 'Esfera integradora;', 'Espectrometria e refratometria;'] },
       { type: 'list', heading: 'Principais ensaios realizados e normas atendidas', items: [
         'Determinação da transmissão luminosa de materiais, transmitância, refração, proteção solar;',
         'Determinação dos coeficientes de retrorreflexão (ASTM 808-23, 809-21, 810-20 e NBR 15292:13);',
